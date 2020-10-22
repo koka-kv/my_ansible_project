@@ -1,0 +1,14 @@
+	
+
+[gr1]
+wm1	ansible_host=10.0.1.54	
+[gr2]
+wm2	ansible_host=10.0.1.56  
+[gr3]
+wm3	ansible_host=10.0.1.57  
+[iaas]
+wm4	ansible_host=10.0.1.58  
+[iaas:children]
+gr1
+gr2
+

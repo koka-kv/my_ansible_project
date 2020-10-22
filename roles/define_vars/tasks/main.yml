@@ -1,0 +1,11 @@
+---
+# tasks file for define_vars
+ 
+  - name: "Define vars"
+    shell: cat /etc/issue
+    register: result     
+
+  - set_fact: mesg="{{ansible_nodename}}    {{ansible_user}}   {{result.stdout}}"
+
+  - debug:
+      var: mesg

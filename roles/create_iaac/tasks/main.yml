@@ -1,0 +1,10 @@
+---
+# tasks file for create_iaac
+
+    - name: "Create file iaac"
+      copy:
+        content: ""
+        dest: /etc/iaac
+        force: no
+        mode: 0500
+
